@@ -66,6 +66,7 @@ function App() {
       setPage(pageNumber + 1);
     } catch (error) {
       setError(error.message);
+      setLoading(false);
     } finally {
       setLoading(false);
     }
@@ -82,6 +83,7 @@ function App() {
   return (
     <div>
       {isHeaderVisible && <Header />}
+      {error && <div className="text-red-500">{error}</div>} 
       <div className='flex mt-20 justify-center items-center min-h-screen max-w-screen'>
         {showButton && <ScrollButton onClick={handleScrollToTop} />}
         <InfiniteScroll
