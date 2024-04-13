@@ -1,4 +1,3 @@
-```markdown
 # BlogFeeds
 
 BlogFeeds is a React application that fetches and displays a feed of blog posts using an infinite scroll feature. It utilizes Axios for fetching data, React for UI rendering, and other dependencies for additional functionalities.
